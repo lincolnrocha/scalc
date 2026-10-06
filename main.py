@@ -1,28 +1,7 @@
-# Simple Caculator
+from calc.calculator import Calculator
 
-`Calculator`s API.
-
-```python
-import numpy as np
-
-class Calculator:
-
-    def __init__(self):
-    
-    def add(self, a, b = None):
-    
-    def sub(self, a, b = None):
-        
-    def mul(self, a, b = None):
-        
-    def div(self, a, b = None):
-    
-```
-
-How to use:
-
-```python
-calc = Calculator()
+def main():
+    calc = Calculator()
     
     print("Addition with two arguments (2 + 3):", calc.add(2, 3))
     print("Addition with one argument (adding 2 to memory):", calc.add(2))
@@ -35,4 +14,6 @@ calc = Calculator()
     
     print("Division with two arguments (6 / 3):", calc.div(6, 3))
     print("Division with one argument (dividing memory by 6):", calc.div(6))
-```
+
+if __name__ == "__main__":
+    main()
